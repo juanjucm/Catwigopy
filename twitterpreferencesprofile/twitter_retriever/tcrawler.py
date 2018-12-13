@@ -1,5 +1,4 @@
-
-# Perform Twitter retrieving tasks
+# Performs Twitter retrieving tasks
 # Authentication done with credentials specified in secret.py
 
 from .secret import *
@@ -7,7 +6,6 @@ import tweepy
 
 
 class TCrawler:
-
     # Class attributes configured via class method.
     __api = None
     __auth = None
@@ -24,12 +22,12 @@ class TCrawler:
 
         if cls.__api is None:
             cls.__api = tweepy.API(cls.__auth,
-                                        # check remaining calls and block until replenished
-                                        wait_on_rate_limit=True,
-                                        # retry 3 times with 5 seconds delay when getting these error codes
-                                        retry_count=3,
-                                        retry_delay=5,
-                                        retry_errors=set([401, 404, 500, 503]))
+                                   # check remaining calls and block until replenished
+                                   wait_on_rate_limit=True,
+                                   # retry 3 times with 5 seconds delay when getting these error codes
+                                   retry_count=3,
+                                   retry_delay=5,
+                                   retry_errors=set([401, 404, 500, 503]))
 
     def search(self, query, lang, number):
         res = [status for status in
