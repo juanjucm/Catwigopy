@@ -1,4 +1,3 @@
-
 #Perform main tests
 
 from twitterpreferencesprofile.twitter_retriever.tcrawler import TCrawler

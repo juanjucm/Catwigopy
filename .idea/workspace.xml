@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ad85081-9e25-4f63-95bd-ec4aff1ab08a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/retrieve_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/secret.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/tcrawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/languages" beforeDir="false" afterPath="$PROJECT_DIR$/data/languages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterpreferencesprofile/test/main_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterpreferencesprofile/test/main_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterpreferencesprofile/twitterretriever/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterpreferencesprofile/twitterretriever/retrieve_controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterpreferencesprofile/twitterretriever/secret.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterpreferencesprofile/twitterretriever/tcrawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitterpreferencesprofile/test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitterpreferencesprofile/test/main_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +17,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/languages">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="595">
               <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/retrieve_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="255">
               <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
             </state>
           </provider>
@@ -43,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="34">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#1#44#0" expanded="true" />
               </folding>
@@ -55,11 +47,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/tcrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#98#119#0" expanded="true" />
+                <element signature="e#99#120#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -89,6 +90,7 @@
         <option value="$PROJECT_DIR$/data/languages" />
         <option value="$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/tcrawler.py" />
         <option value="$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/retrieve_controller.py" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -102,23 +104,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="twitterpreferencesprofile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitterPreferencesProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitterPreferencesProfile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TwitterPreferencesProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitterPreferencesProfile" type="462c0819:PsiDirectoryNode" />
               <item name="twitterpreferencesprofile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="twitterpreferencesprofile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitterPreferencesProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitterPreferencesProfile" type="462c0819:PsiDirectoryNode" />
               <item name="twitterpreferencesprofile" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter_retriever" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,10 +209,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="-2" width="1680" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13442278" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15389258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -243,44 +251,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/test/main_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/languages">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="595">
           <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="34">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#1#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/retrieve_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/test/main_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/tcrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#98#119#0" expanded="true" />
+            <element signature="e#99#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/retrieve_controller.py">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
