@@ -13,7 +13,7 @@ def get_user_timeline(user, number_of_tweets=all):
     pass
 
 
-# Gets a certain number of user's followed users.
-def get_followed_users(user, number_of_users=all):
+# Gets user's followed users.
+def get_followed_users(user):
     pass
 
