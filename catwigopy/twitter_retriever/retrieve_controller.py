@@ -1,5 +1,4 @@
 # Offers an interface adapting the twitter API to project necessities.
-
 from .tcrawler import TCrawler
 
 
@@ -17,3 +16,5 @@ def get_user_timeline(user, number_of_tweets=all):
 def get_followed_users(user):
     pass
 
+
+# Adds languages to perform the system

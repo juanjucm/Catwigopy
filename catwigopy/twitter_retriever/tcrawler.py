@@ -1,8 +1,12 @@
 # Performs Twitter retrieving tasks
 # Authentication done with credentials specified in secret.py
-
-from .secret import *
 import tweepy
+
+# Set here your Twitter application credentials:
+consumer_key = 'Q2OBHvyHL0jPUGfKpg2JvYO4O'
+consumer_secret = 'nR6rG8RaFxpQMQvrMUX6twhZCf6UNp4wx8MiV5okV53qgSwOp7'
+access_token = '993175870545293312-GvTQWOBF07UUKJFLPhy2l0wptkZDuA0'
+access_token_secret = 'mQ3bII85nPUjtP0FWHbR8t34ft22KY3wGtACqKfTaRuyk'
 
 
 class TCrawler:
@@ -29,9 +33,11 @@ class TCrawler:
                                    retry_delay=5,
                                    retry_errors=set([401, 404, 500, 503]))
 
-    def search(self, query, lang, number):
+    def search_tweets(self, query, lang, number):
         res = [status for status in
                tweepy.Cursor(self.__api.search, q=query, count=100, tweet_mode='extended', lang=lang).items(number)]
-        print(len(res))
-        for r in res:
-            print(r._json)
+
+        return res
+
+    def serach_user_tweets(self, user, lang, number):
+        pass
