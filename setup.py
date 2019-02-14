@@ -13,10 +13,9 @@ setup(
     packages=find_packages(),
     license='MIT License',
     long_description=long_description,
+    url='https://github.com/Juanju97/TwitterPreferencesProfile',
     author='Juan Julian',
     author_email='juanjucm17@gmail.com',
     install_requires=['tweepy==3.7.0', 'xlrd==1.2.0'],
-    classifiers=[
-    ],
     keywords='profile, twitter, natural language processing, NLP, preferences,api'
 )
