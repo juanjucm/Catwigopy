@@ -1,3 +1,4 @@
+import pandas as pd
 
 
 class User:
@@ -8,8 +9,8 @@ class User:
     def __init__(self, user_name):
         self.user_name = user_name
 
+    def load_tweets(self, tweets):
+        self.tweets = pd.DataFrame(tweets)
+
     def set_name(self, name):
         self.name = name
-
-    def set_tweets(self, tweets):
-        self.tweets = tweets
