@@ -37,3 +37,8 @@ def search_user_tweets(api, user_screen_name, number_of_tweets):
         tweets_array.append(twt)
 
     return tweets_array
+
+
+def get_user_follows(api, user_screen_name, number_of_users):
+    followed_users = [user.screen_name for user in tweepy.Cursor(api.friends, screen_name=user_screen_name).items(number_of_users)]
+    return followed_users
