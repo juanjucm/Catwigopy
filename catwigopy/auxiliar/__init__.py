@@ -8,5 +8,4 @@ def preprocess_tweet(tweet):
 
         preprocessed_tweet = ' '.join([token.lemma_.lower() for token in tweet_ if not token.is_stop and token.is_alpha and len(token.shape_) > 1])
 
-        print(preprocessed_tweet)
         return preprocessed_tweet

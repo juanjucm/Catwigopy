@@ -10,9 +10,11 @@ class User:
     user_name = None
     tweets = None
     followed_users = None
+    analysis_results = None
 
     def __init__(self, user_name):
         self.user_name = user_name
+        self.analysis_results = {'nmf': None, 'kmeans': None}
 
     def load_tweets(self, tweets):
         self.tweets = pd.DataFrame(tweets)
