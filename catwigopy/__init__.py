@@ -27,7 +27,7 @@ class Catwigopy:
     def classify_tweets_nmf(self):
         if self.user.analysis_results['nmf'] is None:
             # Get models pickles from folder
-            with open('../data/models/nmf/nmf_80_2_01_05_nndsvda_noTermLimitTfidf.pickle', 'rb') as f:
+            with open('../data/models/nmf/nmf_29_2_01_05_nndsvda_noTermLimitTfidf.pickle', 'rb') as f:
                 nmf = pickle.load(f)
 
             with open('../data/models/nmf/tfidf.pickle', 'rb') as f:

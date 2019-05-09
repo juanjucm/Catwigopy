@@ -6,7 +6,7 @@ def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
     # Transform vectorized tweet to NMF space
     nmf_new_doc = nmf.transform(tfidf_vectorizer.transform([doc]))
     # top 2 topics of the new feedback
-    compo = nmf_new_doc.argsort()[0, :-5 - 1: -1]
+    compo = nmf_new_doc.argsort()[0, :: -1]
 
     list_to_return = list()
     for topic_idx in compo:
