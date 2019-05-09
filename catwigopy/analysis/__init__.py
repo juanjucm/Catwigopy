@@ -39,8 +39,7 @@ def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
     compo = nmf_new_doc.argsort()[0, :: -1]
 
     # Get multiplicator to compute score
-    l = [d for d in nmf_new_doc[0]]
-    mult = 100 / sum(l)
+    mul = 100 / sum([d for d in nmf_new_doc[0]])
 
     topic_list = list()
     score_list = list()
@@ -48,7 +47,7 @@ def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
         # Most probable topics:
         if nmf_new_doc[0][topic_idx] > 0.0:
             topic_list.append(topic_idx)
-            score_list.append(round(nmf_new_doc[0][topic_idx]*mult, 3))
+            score_list.append(round(nmf_new_doc[0][topic_idx]*mul, 3))
 
     cat_list = list(map(lambda x: [pair[1] for pair in num_to_cat if pair[0] == x][0], topic_list))
 

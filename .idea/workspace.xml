@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ad85081-9e25-4f63-95bd-ec4aff1ab08a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/catwigopy/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/analysis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="272">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catwigopy/analysis/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="52" column="99" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="99" />
+            <state relative-caret-position="289">
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
               <folding>
                 <element signature="e#218#1410#0" />
               </folding>
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -95,10 +95,10 @@
         <option value="$PROJECT_DIR$/catwigopy/Catwigopy.py" />
         <option value="$PROJECT_DIR$/catwigopy/User.py" />
         <option value="$PROJECT_DIR$/catwigopy/auxiliar/__init__.py" />
-        <option value="$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py" />
         <option value="$PROJECT_DIR$/catwigopy/__init__.py" />
         <option value="$PROJECT_DIR$/tests/test_main.py" />
         <option value="$PROJECT_DIR$/catwigopy/analysis/__init__.py" />
+        <option value="$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py" />
       </list>
     </option>
   </component>
@@ -425,6 +425,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catwigopy/analysis/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="e#218#1410#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catwigopy/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -435,27 +452,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catwigopy/analysis/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="52" column="99" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="99" />
-          <folding>
-            <element signature="e#218#1410#0" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
