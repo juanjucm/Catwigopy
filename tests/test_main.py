@@ -6,8 +6,10 @@ consumer_key, consumer_secret, access_token, access_token_secret = ["Q2OBHvyHL0j
 
 cat = Catwigopy('Tesla', consumer_key, consumer_secret, access_token, access_token_secret)
 
-cat.search_user(1200, 10000)
-cat.classify_tweets_nmf()
-print(cat.get_analysis_results())
+print(cat.user.name, cat.user.description, cat.user.image)
+
+# cat.search_user(1200, 10000)
+# cat.classify_tweets_nmf()
+# print(cat.get_analysis_results())
 
 

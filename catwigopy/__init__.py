@@ -3,7 +3,7 @@ from catwigopy.User import User
 from catwigopy.auxiliar import *
 from catwigopy.analysis import *
 import pickle
-
+import time
 
 class Catwigopy:
 
@@ -13,7 +13,8 @@ class Catwigopy:
 
     def __init__(self, user_name, consumer_key, consumer_secret, access_token, access_token_secret):
         self.api = tm.do_authentication(consumer_key, consumer_secret, access_token, access_token_secret)
-        self.user = User(user_name)
+        result = tm.get_user_info(self.api, user_name)
+        self.user = User(user_name, result[0], result[1], result[2])
 
     # Retrieves initial user information
     def search_user(self, number_of_tweets, number_of_users):
@@ -21,7 +22,7 @@ class Catwigopy:
         self.user.load_tweets(tm.search_user_tweets(self.api, self.user.user_name, number_of_tweets))
 
         # Retrieve followed users
-        self.user.followed_users = tm.get_user_follows(self.api, self.user.user_name, number_of_users)
+        #self.user.followed_users = tm.get_user_follows(self.api, self.user.user_name, number_of_users)
 
     # Classify using NMF with the best hyperparameter configuration acquired in training phase.
     def classify_tweets_nmf(self):
