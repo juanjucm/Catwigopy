@@ -1,0 +1,12 @@
+README.md
+setup.py
+catwigopy/User.py
+catwigopy/__init__.py
+catwigopy.egg-info/PKG-INFO
+catwigopy.egg-info/SOURCES.txt
+catwigopy.egg-info/dependency_links.txt
+catwigopy.egg-info/requires.txt
+catwigopy.egg-info/top_level.txt
+catwigopy/analysis/__init__.py
+catwigopy/auxiliar/__init__.py
+catwigopy/twitter_manager/__init__.py

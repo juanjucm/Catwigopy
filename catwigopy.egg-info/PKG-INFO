@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: catwigopy
+Version: 1.0.2
+Summary: This tool provides an easy way to generate a preferences profile of a given twitter user
+Home-page: https://github.com/Juanju97/TwitterPreferencesProfile
+Author: Juanju
+Author-email: juanjucm17@gmail.com
+License: MIT License
+Description: Created by Juan Julian Cea Moran at Universidad de Salamanca
+        
+        End-Of-Degree Project. Official title: Platform for extracting preferences from a Twitter profile.
+Keywords: profile,twitter,natural language processing,NLP,preferences,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
