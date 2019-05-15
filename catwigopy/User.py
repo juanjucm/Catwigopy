@@ -31,7 +31,9 @@ class User:
         pool = Pool(processes=5)
         mp_answer = pool.map_async(self.preprocessing_handler, (array for array in arrays_to_preprocess))
 
+        # Concat the results and shuffle the tweets
         self.tweets = pd.concat(mp_answer.get())
+        #self.tweets = self.tweets.sample(frac=1).reset_index(drop=True)
 
     def preprocessing_handler(self, df_to_preprocess):
         for index, row in df_to_preprocess.iterrows():
