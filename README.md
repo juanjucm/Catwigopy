@@ -6,6 +6,35 @@
 ## Introduction
 
 **Catwigopy** is a tool which provides an easy way to generate a preferences profile of a given Twitter user.
+
+Here are all the possible categories to classify a user:
+- Music and Radio
+- Movies
+- Videogames
+- Books and Literature
+- Careers
+- Personal Health
+- Religion and Spirituality
+- Home and Garden
+- Personal Finance
+- Pets and Animals
+- Shopping
+- Travel
+- Automotive
+- Fine Art
+- Science
+- News and Politics
+- Education
+- Food and Drink
+- Financial and Business
+- Family and Relationships
+- Style and Fashion
+- Medical Health
+- Software and Technology
+- Events
+- Hobbies and Pop Culture
+- Sports
+
 ## Installation
 
 To install the latest version of [**catwigopy**](https://pypi.org/project/catwigopy/) from PyPi use:
@@ -56,6 +85,16 @@ Now, train the model and classify the tweets:
 And get the results in a dictionary:
 
 ``new_user.get_analysis_results()``
+
+##Example results
+Here is the result of a simple Catwigopy use. **Here I only expose the top 3 categories** for each user, but all them are returned in the dictionary.
+
+| Username  | First Category | Second Category | Third Category |
+| ----- | -------------- | --------------- | -------------- |
+| Tesla  | Automotive (70.92%)  | Software and Technology (10.07%) | Travel (3.86%)|
+| realDonaldTrump  | News and Politics (28.02%)  | Financial and Business (11.36%) | Sports (8.02%)|
+| sciencemagazine | Science (24.41%) | Medical Health (16.73%) |  Education (12.03%) |
+| NintendoAmerica | Videogames (41.65%) | Hobbies and Pop Culture (12.19%) | Sports (9.74%) |
 
 ## Disclaimer
 

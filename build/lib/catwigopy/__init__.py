@@ -19,13 +19,9 @@ class Catwigopy:
         self._user = User(user_name, result[0], result[1], result[2])
 
     # Retrieves user tweets
-    def search_user_timeline(self, number_of_tweets):
+    def search_user_timeline(self, number_of_tweets=1200):
         # Retrieve the timeline and load tweets into user
         self._user.load_tweets(tm.search_user_tweets(self.api, self._user.user_name, number_of_tweets))
-
-    def search_user_followed(self, number_of_users):
-        # Retrieve followed users
-        self._user.followed_users = tm.get_user_follows(self.api, self._user.user_name, number_of_users)
 
     # Classify using NMF with the best hyperparameter configuration acquired in training phase.
     def classify_tweets_nmf(self):
