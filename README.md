@@ -86,7 +86,7 @@ And get the results in a dictionary:
 
 ``new_user.get_analysis_results()``
 
-##Example results
+## Example results
 
 Here is the result of a simple Catwigopy use. **Here I only expose the top 3 categories** for each user, but all them are returned in the dictionary.
 
