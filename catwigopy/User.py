@@ -12,7 +12,6 @@ class User:
     image = None
     description = None
     tweets = None
-    followed_users = None
     analysis_results = None
 
     def __init__(self, user_name, image_url, name, description):
