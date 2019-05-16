@@ -6,7 +6,10 @@ consumer_key, consumer_secret, access_token, access_token_secret = ["2eu2aB1DBge
 
 cat = Catwigopy('Spotify', consumer_key, consumer_secret, access_token, access_token_secret)
 
-cat.search_user_timeline(1200)
+cat.search_user_timeline(1000)
+
+print(cat.get_hashtags_terms_count())
+print(cat.get_tweet_terms_count())
 cat.classify_tweets_nmf()
 print(cat.get_analysis_results())
 

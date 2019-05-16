@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: catwigopy
-Version: 1.0.5
+Version: 0.0.6
 Summary: This tool provides an easy way to generate a preferences profile of a given twitter user
 Home-page: https://github.com/Juanju97/Catwigopy
 Author: Juanju
@@ -94,7 +94,8 @@ Description: # Catwigopy
         
         ``new_user.get_analysis_results()``
         
-        ##Example results
+        ## Example results
+        
         Here is the result of a simple Catwigopy use. **Here I only expose the top 3 categories** for each user, but all them are returned in the dictionary.
         
         | Username  | First Category | Second Category | Third Category |

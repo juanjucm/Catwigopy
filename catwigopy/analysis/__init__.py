@@ -1,4 +1,4 @@
-
+import gensim.corpora as corpora
 
 # Performs analysis using the provided nmf and tfidf model over the specified new doc.
 # Returns a list containing the non-0 topics and their score.
@@ -53,3 +53,22 @@ def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
 
     dict_to_return = dict(zip(cat_list, score_list))
     return dict_to_return
+
+
+# Takes as imput a list of lists containing terms and returns a dictionary type:
+# [{
+#     'text': 'term',
+#     'count': 2
+# }, ...]
+def generate_occurences_dictionay(list):
+    dictionary = corpora.Dictionary(list)
+
+    terms_with_score = []
+    for word, id_ in dictionary.token2id.items():
+        temp = {
+            'text':  word,
+            'count': dictionary.dfs[id_]
+        }
+        terms_with_score.append(temp)
+
+    return terms_with_score

@@ -36,7 +36,7 @@ class Catwigopy:
             with open('../data/models/nmf/tfidf_vectorizer.pickle', 'rb') as f:
                 tfidf_vectorizer = pickle.load(f)
 
-            doc = " ".join(self._user.tweets['preprocessed'])
+            doc = " ".join(self._user.tweets['preprocessed_tweet'])
             self._user.analysis_results['nmf'] = apply_nmf(nmf, tfidf, tfidf_vectorizer, doc)
 
     def get_analysis_results(self):
@@ -53,3 +53,12 @@ class Catwigopy:
 
     def get_user_image(self):
         return self._user.image
+
+    # Returns a list of dictionaries with shape {text: #hashtag, count: 12}
+    def get_hashtags_terms_count(self):
+        return generate_occurences_dictionay([l for l in self._user.tweets['hashtags'] if l])
+
+    # Returns a list of dictionaries with shape {text: term, count: 12}
+    def get_tweet_terms_count(self):
+        return generate_occurences_dictionay([l for l in self._user.tweets['preprocessed_tokens'] if l])
+

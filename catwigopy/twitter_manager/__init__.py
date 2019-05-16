@@ -26,7 +26,7 @@ def search_user_tweets(api, user_screen_name, number_of_tweets):
     for tweet in tweets:
         # Get the text and hashtags
         text = tweet['full_text']
-        hashtags = [h['text'] for h in tweet['entities']['hashtags']]
+        hashtags = ['#' + h['text'] for h in tweet['entities']['hashtags']]
 
         # Create the document
         twt = {'text': text,
