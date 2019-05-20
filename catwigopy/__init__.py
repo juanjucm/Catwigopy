@@ -2,6 +2,7 @@ import catwigopy.twitter_manager as tm
 from catwigopy.User import User
 from catwigopy.auxiliar import *
 from catwigopy.analysis import *
+import pandas as pd
 import pickle
 
 name = "catwigopy"
@@ -18,13 +19,13 @@ class Catwigopy:
         result = tm.get_user_info(self.api, user_name)
         self._user = User(user_name, result[0], result[1], result[2])
 
-    # Retrieves user tweets
+    # Retrieves user tweets and preprocess them
     def search_user_timeline(self, number_of_tweets=1200):
-        # Retrieve the timeline and load tweets into user
-        self._user.load_tweets(tm.search_user_tweets(self.api, self._user.user_name, number_of_tweets))
+        # Retrieve the timeline, preprocess the tweets and load them as dataFrame
+        self._user.tweets = pd.DataFrame(tm.search_user_tweets(self.api, self._user.user_name, number_of_tweets))
 
     # Classify using NMF with the best hyperparameter configuration acquired in training phase.
-    def classify_tweets_nmf(self):
+    def get_user_classification(self):
         if self._user.analysis_results['nmf'] is None:
             # Get models pickles from folder
             with open('../data/models/nmf/nmf_29_2_01_05_nndsvda_noTermLimitTfidf.pickle', 'rb') as f:
@@ -39,7 +40,6 @@ class Catwigopy:
             doc = " ".join(self._user.tweets['preprocessed_tweet'])
             self._user.analysis_results['nmf'] = apply_nmf(nmf, tfidf, tfidf_vectorizer, doc)
 
-    def get_analysis_results(self):
         return self._user.analysis_results['nmf']
 
     def get_user_name(self):

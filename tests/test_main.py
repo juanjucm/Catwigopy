@@ -1,15 +1,13 @@
 #Perform main tests
 
+import time
+
 from catwigopy import Catwigopy
 
-consumer_key, consumer_secret, access_token, access_token_secret = ["2eu2aB1DBgecsWPFmlbgIbuzO", "lUHC1VfcB958XwIBoyrgUsCA87iDrcXCy6lk6pwvhRnBzVrXZ6", "239585752-I06Pl7BzPC6Go3Qh1gLwKqUMzSvIgVi3ltjbzmwi", "pNyKGc5Jx3CSRKqnbB6LT8xO7AF2YSumDHQKrY8p7JIRj"]
+consumer_key, consumer_secret, access_token, access_token_secret = ["WGH1yjqPiQg92igLjnhCg1wlC", "UwlSBz5Xxk7gConanvjq3XLOyHoCfVZk6JPSF7XOZMJvDu9NN4", "254490342-urFr0JJqjpHxYEvfg1JC2a2DtnHGIrD1lFqxSiOU", "EkxTbenoDae8cmDepAPJkDQ0WLyna6gNc4drmx07KWieh"]
 
-cat = Catwigopy('Spotify', consumer_key, consumer_secret, access_token, access_token_secret)
+cat = Catwigopy('Disney', consumer_key, consumer_secret, access_token, access_token_secret)
 
-cat.search_user_timeline(1000)
+cat.search_user_timeline(1500)
 
-print(cat.get_hashtags_terms_count())
-print(cat.get_tweet_terms_count())
-cat.classify_tweets_nmf()
-print(cat.get_analysis_results())
-
+print(cat.get_user_classification())

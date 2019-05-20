@@ -1,5 +1,5 @@
 import tweepy
-import time
+from catwigopy.auxiliar import preprocess_tweet
 
 
 def do_authentication(consumer_key, consumer_secret, access_token, access_token_secret):
@@ -28,9 +28,13 @@ def search_user_tweets(api, user_screen_name, number_of_tweets):
         text = tweet['full_text']
         hashtags = ['#' + h['text'] for h in tweet['entities']['hashtags']]
 
+        # preprocess tweet
+        result = preprocess_tweet(text)
         # Create the document
         twt = {'text': text,
                'hashtags': hashtags,
+               'preprocessed_tweet': result[0],
+               'preprocessed_tokens': result[1]
                }
 
         tweets_array.append(twt)
