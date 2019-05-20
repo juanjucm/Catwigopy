@@ -1,3 +1,4 @@
+MANIFEST.in
 README.md
 setup.py
 catwigopy/User.py
@@ -9,4 +10,7 @@ catwigopy.egg-info/requires.txt
 catwigopy.egg-info/top_level.txt
 catwigopy/analysis/__init__.py
 catwigopy/auxiliar/__init__.py
+catwigopy/data/models/nmf/nmf.pickle
+catwigopy/data/models/nmf/tfidf.pickle
+catwigopy/data/models/nmf/tfidf_vectorizer.pickle
 catwigopy/twitter_manager/__init__.py

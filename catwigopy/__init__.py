@@ -4,6 +4,7 @@ from catwigopy.auxiliar import *
 from catwigopy.analysis import *
 import pandas as pd
 import pickle
+import pkg_resources
 
 name = "catwigopy"
 
@@ -27,18 +28,29 @@ class Catwigopy:
     # Classify using NMF with the best hyperparameter configuration acquired in training phase.
     def get_user_classification(self):
         if self._user.analysis_results['nmf'] is None:
-            # Get models pickles from folder
-            with open('../data/models/nmf/nmf_29_2_01_05_nndsvda_noTermLimitTfidf.pickle', 'rb') as f:
-                nmf = pickle.load(f)
 
-            with open('../data/models/nmf/tfidf.pickle', 'rb') as f:
-                tfidf = pickle.load(f)
+            # Create routes
+            resource_package = __name__
+            resource_path = '/'.join(('data', 'models', 'nmf', 'nmf.pickle'))
+            resource_path2 = '/'.join(('data', 'models', 'nmf', 'tfidf.pickle'))
+            resource_path3 = '/'.join(('data', 'models', 'nmf', 'tfidf_vectorizer.pickle'))
 
-            with open('../data/models/nmf/tfidf_vectorizer.pickle', 'rb') as f:
-                tfidf_vectorizer = pickle.load(f)
+            # If exists, load the models
+            if pkg_resources.resource_exists(resource_package, resource_path) and \
+                    pkg_resources.resource_exists(resource_package, resource_path2) and \
+                    pkg_resources.resource_exists(resource_package, resource_path3):
 
-            doc = " ".join(self._user.tweets['preprocessed_tweet'])
-            self._user.analysis_results['nmf'] = apply_nmf(nmf, tfidf, tfidf_vectorizer, doc)
+                with open(pkg_resources.resource_filename(resource_package, resource_path), 'rb') as f:
+                    nmf = pickle.load(f)
+
+                with open(pkg_resources.resource_filename(resource_package, resource_path2), 'rb') as f:
+                    tfidf = pickle.load(f)
+
+                with open(pkg_resources.resource_filename(resource_package, resource_path3), 'rb') as f:
+                    tfidf_vectorizer = pickle.load(f)
+
+                doc = " ".join(self._user.tweets['preprocessed_tweet'])
+                self._user.analysis_results['nmf'] = apply_nmf(nmf, tfidf, tfidf_vectorizer, doc)
 
         return self._user.analysis_results['nmf']
 

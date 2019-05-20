@@ -8,7 +8,7 @@ with open("README.md", 'r') as f:
 
 setup(
     name='catwigopy',
-    version='0.1.0',
+    version='0.1.8',
     description='This tool provides an easy way to generate a preferences profile of a given twitter user',
     packages=find_packages(),
     license='MIT License',
@@ -25,5 +25,9 @@ setup(
         "Programming Language :: Python :: 3.6",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-    ]
+    ],
+    data_files=[
+           ('data/models/nmf', ['catwigopy/data/models/nmf/nmf.pickle', 'catwigopy/data/models/nmf/tfidf.pickle', 'catwigopy/data/models/nmf/tfidf_vectorizer.pickle'])
+    ],
+    include_package_data=True
 )
