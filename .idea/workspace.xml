@@ -2,27 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ad85081-9e25-4f63-95bd-ec4aff1ab08a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/User.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/analysis/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/auxiliar/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/data/models/nmf/nmf.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/data/models/nmf/tfidf.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/data/models/nmf/tfidf_vectorizer.pickle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/twitter_manager/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/PKG-INFO" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/SOURCES.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/dependency_links.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/requires.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catwigopy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/models/nmf/nmf_29_2_01_05_nndsvda_noTermLimitTfidf.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/data/models/nmf/nmf.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/models/nmf/tfidf.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/data/models/nmf/tfidf.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/models/nmf/tfidf_vectorizer.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/data/models/nmf/tfidf_vectorizer.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.1.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.1.0.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catwigopy/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/analysis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.1.8-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.1.8.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,26 +29,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catwigopy/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="-134">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#404#626#0" />
-                <element signature="e#743#930#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catwigopy/analysis/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="e#23#66#0" expanded="true" />
               </folding>
@@ -59,22 +64,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding>
-                <element signature="e#21#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1190">
+                <caret line="70" selection-start-line="70" selection-end-line="70" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -116,8 +112,6 @@
         <option value="$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/tcrawler.py" />
         <option value="$PROJECT_DIR$/catwigopy/twitter_retriever/tcrawler.py" />
         <option value="$PROJECT_DIR$/catwigopy/Catwigopy.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/catwigopy/analysis/__init__.py" />
         <option value="$PROJECT_DIR$/catwigopy/auxiliar/__init__.py" />
         <option value="$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py" />
         <option value="$PROJECT_DIR$/catwigopy/User.py" />
@@ -126,6 +120,8 @@
         <option value="$PROJECT_DIR$/tests/test_main.py" />
         <option value="$PROJECT_DIR$/catwigopy/__init__.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/catwigopy/analysis/__init__.py" />
       </list>
     </option>
   </component>
@@ -139,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,27 +152,13 @@
               <item name="Catwigopy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Catwigopy" type="462c0819:PsiDirectoryNode" />
               <item name="catwigopy" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Catwigopy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Catwigopy" type="462c0819:PsiDirectoryNode" />
               <item name="catwigopy" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Catwigopy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Catwigopy" type="462c0819:PsiDirectoryNode" />
-              <item name="catwigopy" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="nmf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Catwigopy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Catwigopy" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Catwigopy" type="b2602c69:ProjectViewProjectNode" />
@@ -185,7 +168,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,8 +337,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25988403" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11228255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,7 +350,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49973643" visible="true" weight="0.22980063" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49973643" visible="true" weight="0.22980063" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002636" side_tool="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32843652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -406,13 +389,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml" />
     <entry file="file://$PROJECT_DIR$/twitterpreferencesprofile/twitter_retriever/secret.py" />
     <entry file="file://$PROJECT_DIR$/catwigopy/auxiliar/categories_manager.py" />
     <entry file="file://$PROJECT_DIR$/data/categories.json" />
@@ -427,16 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -444,13 +411,6 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catwigopy/analysis/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -471,24 +431,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/__init__.py" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/investpy/resources/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -505,25 +452,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catwigopy/__init__.py">
+    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#404#626#0" />
-            <element signature="e#743#930#0" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1190">
+            <caret line="70" selection-start-line="70" selection-end-line="70" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
             <element signature="e#23#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catwigopy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catwigopy/analysis/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

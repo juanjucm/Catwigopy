@@ -1,5 +1,6 @@
 import gensim.corpora as corpora
 
+
 # Performs analysis using the provided nmf and tfidf model over the specified new doc.
 # Returns a list containing the non-0 topics and their score.
 def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):

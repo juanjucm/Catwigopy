@@ -71,20 +71,22 @@ Now you can display the user's name, username, image and description.
 
 ``new_user.get_user_description()``
 
-To retrive the user timeline:
+You can also retrieve the hashtags terms count and the tweet terms count:
 
-`new_user.search_user_timeline(number_of_tweets)`
+``res = new_user.get_hashtags_terms_count()``
+
+``res = new_user.get_tweet_terms_count()``
+
+To retrieve the user timeline:
+
+``new_user.search_user_timeline(number_of_tweets)``
 
 By default, number_of_tweets is 1200. You can decrease the value to get better execution times, but the prediction 
 accuracy will be penalized.
 
-Now, train the model and classify the tweets:
+Now, classify the tweets with the model and get the results in a dictionary with:
 
-``new_user.classify_tweets_nmf()``
-
-And get the results in a dictionary:
-
-``new_user.get_analysis_results()``
+``res = new_user.get_user_classification()``
 
 ## Example results
 

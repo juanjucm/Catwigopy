@@ -8,7 +8,7 @@ with open("README.md", 'r') as f:
 
 setup(
     name='catwigopy',
-    version='0.1.8',
+    version='0.1.9',
     description='This tool provides an easy way to generate a preferences profile of a given twitter user',
     packages=find_packages(),
     license='MIT License',
