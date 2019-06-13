@@ -1,9 +1,6 @@
 import gensim.corpora as corpora
 
-# Performs analysis using the provided nmf and tfidf model over the specified new doc.
-# Returns a list containing the non-0 topics and their score.
-def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
-    num_to_cat = [(0, 'Music and Radio'),
+num_to_cat = [(0, 'Music and Radio'),
                   (1, 'Movies'),
                   (2, 'Videogames'),
                   (3, 'Books and Literature'),
@@ -34,6 +31,10 @@ def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
                   (28, 'trash'),
                   (None, 'None')]
 
+
+# Performs analysis using the provided nmf and tfidf model over the specified new doc.
+# Returns a list containing the non-0 topics and their score.
+def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
     # Transform vectorized tweet to NMF space
     nmf_new_doc = nmf.transform(tfidf_vectorizer.transform([doc]))
     compo = nmf_new_doc.argsort()[0, :: -1]
@@ -72,3 +73,15 @@ def generate_occurences_dictionay(list):
         terms_with_score.append(temp)
 
     return terms_with_score
+
+
+def generate_top_terms_dictionary(nmf, tfidf_vectorizer, nterms=30):
+    all_topics_dict = dict()
+    fnames = tfidf_vectorizer.get_feature_names()
+
+    for topic_idx, topic in enumerate(nmf.components_):
+        name = num_to_cat[topic_idx][1]
+        if name and name is not 'trash':
+            all_topics_dict[name] = [{'text': fnames[t],'count': float("{0:.3f}".format(topic[t]/sum(topic)*100))} for t in topic.argsort()[:-nterms - 1:-1]]
+
+    return all_topics_dict
