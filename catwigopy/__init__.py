@@ -14,6 +14,7 @@ class Catwigopy:
     # Class attribute configured via class method.
     api = None
     _user = None
+    topics_top_terms = None
     nmf = None
     tfidf = None
     tfidf_vectorizer = None
@@ -91,17 +92,27 @@ class Catwigopy:
                 with open(pkg_resources.resource_filename(resource_package, resource_path3), 'rb') as f:
                     self.tfidf_vectorizer = pickle.load(f)
 
-        return generate_top_terms_dictionary(self.nmf, self.tfidf_vectorizer, nterms)
+        if self.topics_top_terms is None:
+            self.topics_top_terms = generate_top_terms_dictionary(self.nmf, self.tfidf_vectorizer, nterms)
+
+        return self.topics_top_terms
 
     # Returns a list of dictionaries with shape {text: #hashtag, count: 12}
     def get_hashtags_terms_count(self):
         if self._user.tweets is None:
             return "error, user tweets have not been searched yet."
-        return generate_occurences_dictionay([l for l in self._user.tweets['hashtags'] if l])
+
+        if self._user.hashtags_terms is None:
+            self._user.hashtags_terms = generate_occurences_dictionay([l for l in self._user.tweets['hashtags'] if l])
+        return self._user.hashtags_terms
 
     # Returns a list of dictionaries with shape {text: term, count: 12}
-    def get_tweet_terms_count(self):
+    def get_tweets_terms_count(self):
         if self._user.tweets is None:
             return "error, user tweets have not been searched yet."
-        return generate_occurences_dictionay([l for l in self._user.tweets['preprocessed_tokens'] if l])
+
+        if self._user.tweets_terms is None:
+            self._user.tweets_terms = generate_occurences_dictionay([l for l in self._user.tweets['preprocessed_tokens'] if l])
+        return self._user.tweets_terms
+
 

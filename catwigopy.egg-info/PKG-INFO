@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: catwigopy
-Version: 0.2.0
+Version: 0.2.1
 Summary: This tool provides an easy way to generate a preferences profile of a given twitter user
 Home-page: https://github.com/Juanju97/Catwigopy
 Author: Juanju
@@ -83,7 +83,7 @@ Description: # Catwigopy
         
         ``res = new_user.get_hashtags_terms_count()``
         
-        ``res = new_user.get_tweet_terms_count()``
+        ``res = new_user.get_tweets_terms_count()``
         
         To retrieve the user timeline:
         

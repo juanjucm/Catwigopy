@@ -75,7 +75,7 @@ You can also retrieve the hashtags terms count and the tweet terms count:
 
 ``res = new_user.get_hashtags_terms_count()``
 
-``res = new_user.get_tweet_terms_count()``
+``res = new_user.get_tweets_terms_count()``
 
 To retrieve the user timeline:
 

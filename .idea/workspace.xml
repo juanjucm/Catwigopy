@@ -3,17 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5ad85081-9e25-4f63-95bd-ec4aff1ab08a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/catwigopy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/catwigopy/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/catwigopy/analysis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/PKG-INFO" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/SOURCES.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/dependency_links.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/requires.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catwigopy/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/User.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catwigopy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catwigopy/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/catwigopy/analysis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.1.9-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.1.9.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.2.0-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/catwigopy-0.2.0.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catwigopy/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-123">
-              <caret line="71" column="115" selection-start-line="71" selection-start-column="115" selection-end-line="71" selection-end-column="115" />
+            <state relative-caret-position="542">
+              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -70,11 +69,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catwigopy/User.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1190">
-                <caret line="70" selection-start-line="70" selection-end-line="70" />
+              <first_editor relative-caret-position="610">
+                <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
               </first_editor>
               <second_editor />
             </state>
@@ -120,13 +131,13 @@
         <option value="$PROJECT_DIR$/catwigopy/Catwigopy.py" />
         <option value="$PROJECT_DIR$/catwigopy/auxiliar/__init__.py" />
         <option value="$PROJECT_DIR$/catwigopy/twitter_manager/__init__.py" />
-        <option value="$PROJECT_DIR$/catwigopy/User.py" />
         <option value="$PROJECT_DIR$/catwigopy/data/__init__.py" />
         <option value="$PROJECT_DIR$/MANIFEST.in" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/catwigopy/__init__.py" />
         <option value="$PROJECT_DIR$/catwigopy/analysis/__init__.py" />
         <option value="$PROJECT_DIR$/tests/test_main.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/catwigopy/User.py" />
+        <option value="$PROJECT_DIR$/catwigopy/__init__.py" />
         <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
@@ -355,6 +366,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11228255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -367,7 +379,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49973643" visible="true" weight="0.22894168" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49973643" visible="true" weight="0.31317493" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002636" side_tool="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32843652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -431,16 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catwigopy/User.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/__init__.py" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/investpy/resources/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -459,30 +461,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1190">
-            <caret line="70" selection-start-line="70" selection-end-line="70" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catwigopy/auxiliar/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catwigopy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="71" column="115" selection-start-line="71" selection-start-column="115" selection-end-line="71" selection-end-column="115" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,6 +481,36 @@
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="e#21#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="610">
+            <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catwigopy/User.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catwigopy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

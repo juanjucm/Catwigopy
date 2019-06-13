@@ -13,6 +13,8 @@ class User:
     description = None
     tweets = None
     analysis_results = None
+    tweets_terms = None
+    hashtags_terms = None
 
     def __init__(self, user_name, image_url, name, description):
         self.user_name = user_name
