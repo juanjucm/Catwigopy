@@ -8,6 +8,12 @@ consumer_key, consumer_secret, access_token, access_token_secret = ["WGH1yjqPiQg
 
 cat = Catwigopy('Disney', consumer_key, consumer_secret, access_token, access_token_secret)
 
-cat.search_user_timeline(1500)
+start1 = time.time()
+cat.get_topics_top_terms()
+end1 = time.time()
+print(end1 - start1)
 
-print(cat.get_user_classification())
+start2 = time.time()
+cat.get_topics_top_terms()
+end2 = time.time()
+print(end2 -start2)

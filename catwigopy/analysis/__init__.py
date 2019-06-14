@@ -82,6 +82,6 @@ def generate_top_terms_dictionary(nmf, tfidf_vectorizer, nterms=30):
     for topic_idx, topic in enumerate(nmf.components_):
         name = num_to_cat[topic_idx][1]
         if name and name is not 'trash':
-            all_topics_dict[name] = [{'text': fnames[t],'count': float("{0:.3f}".format(topic[t]/sum(topic)*100))} for t in topic.argsort()[:-nterms - 1:-1]]
+            all_topics_dict[name] = [{'text': fnames[t], 'values': float("{0:.3f}".format(topic[t]/sum(topic)*100))} for t in topic.argsort()[:-nterms - 1:-1]]
 
     return all_topics_dict
