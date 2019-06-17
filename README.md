@@ -58,8 +58,11 @@ First of all, import the module
 ``from catwigopy import Catwigopy``
 
 This next line, creates an instance of Catwigopy for the specified user **username**.
+It also retrieves user's tweets. By default, number_of_tweets is 1200. You can decrease the value to get better execution times, but the prediction
+accuracy will be penalized.
+You will need to provide the credentials fot the Twitter API.
 
-``new_user = Catwigopy('Tesla', consumer_key, consumer_secret, access_token, access_token_secret)``
+``new_user = Catwigopy('Tesla', consumer_key, consumer_secret, access_token, access_token_secret, number_of_tweets=1200)``
 
 Now you can display the user's name, username, image and description.
 
@@ -71,18 +74,18 @@ Now you can display the user's name, username, image and description.
 
 ``new_user.get_user_description()``
 
-You can also retrieve the hashtags terms count and the tweet terms count:
+You can also retrieve the hashtags terms count, the tweet terms count and the topics terms count:
 
 ``res = new_user.get_hashtags_terms_count()``
 
 ``res = new_user.get_tweets_terms_count()``
 
+``res = new_user.get_topics_top_terms(nterms=30)``
+
 To retrieve the user timeline:
 
 ``new_user.search_user_timeline(number_of_tweets)``
 
-By default, number_of_tweets is 1200. You can decrease the value to get better execution times, but the prediction 
-accuracy will be penalized.
 
 Now, classify the tweets with the model and get the results in a dictionary with:
 

@@ -19,15 +19,11 @@ class Catwigopy:
     tfidf = None
     tfidf_vectorizer = None
 
-    def __init__(self, user_name, consumer_key, consumer_secret, access_token, access_token_secret):
+    def __init__(self, user_name, consumer_key, consumer_secret, access_token, access_token_secret, number_of_tweets=1200):
         self.api = tm.do_authentication(consumer_key, consumer_secret, access_token, access_token_secret)
         result = tm.get_user_info(self.api, user_name)
-        self._user = User(user_name, result[0], result[1], result[2])
-
-    # Retrieves user tweets and preprocess them
-    def search_user_timeline(self, number_of_tweets=1200):
-        # Retrieve the timeline, preprocess the tweets and load them as dataFrame
-        self._user.tweets = pd.DataFrame(tm.search_user_tweets(self.api, self._user.user_name, number_of_tweets))
+        tweets = pd.DataFrame(tm.search_user_tweets(self.api, user_name, number_of_tweets))
+        self._user = User(user_name, result[0], result[1], result[2], tweets)
 
     # Classify using NMF with the best hyperparameter configuration acquired in training phase.
     def get_user_classification(self):

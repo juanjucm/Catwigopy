@@ -16,9 +16,10 @@ class User:
     tweets_terms = None
     hashtags_terms = None
 
-    def __init__(self, user_name, image_url, name, description):
+    def __init__(self, user_name, image_url, name, description, tweets):
         self.user_name = user_name
         self.image = image_url
         self.name = name
         self.description = description
+        self.tweets = tweets
         self.analysis_results = {'nmf': None, 'kmeans': None}
