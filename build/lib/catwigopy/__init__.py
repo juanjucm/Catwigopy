@@ -21,9 +21,8 @@ class Catwigopy:
 
     def __init__(self, user_name, consumer_key, consumer_secret, access_token, access_token_secret, number_of_tweets=1200):
         self.api = tm.do_authentication(consumer_key, consumer_secret, access_token, access_token_secret)
-        result = tm.get_user_info(self.api, user_name)
-        tweets = pd.DataFrame(tm.search_user_tweets(self.api, user_name, number_of_tweets))
-        self._user = User(user_name, result[0], result[1], result[2], tweets)
+        result = tm.search_user_tweets(self.api, user_name, number_of_tweets)
+        self._user = User(user_name, result[1], result[2], result[3], pd.DataFrame(result[0]))
 
     # Classify using NMF with the best hyperparameter configuration acquired in training phase.
     def get_user_classification(self):

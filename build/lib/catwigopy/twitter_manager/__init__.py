@@ -39,16 +39,9 @@ def search_user_tweets(api, user_screen_name, number_of_tweets):
 
         tweets_array.append(twt)
 
-    return tweets_array
+    return tweets_array, tweets[0]['user']['profile_image_url_https'], tweets[0]['user']['name'], tweets[0]['user']['description']
 
 
 def get_user_follows(api, user_screen_name, number_of_users):
     followed_users = [user.screen_name for user in tweepy.Cursor(api.friends, screen_name=user_screen_name).items(number_of_users)]
     return followed_users
-
-
-# Returns user image, name and description
-def get_user_info(api, user_screen_name):
-    tweet = [tweet._json for tweet in tweepy.Cursor(api.user_timeline, id=user_screen_name, tweet_mode='extended').items(1)][0]
-    return tweet['user']['profile_image_url_https'], tweet['user']['name'], tweet['user']['description']
-
