@@ -7,6 +7,11 @@ from catwigopy.twitter_manager import *
 
 
 class User:
+
+    """
+    class representing the user
+    """
+
     name = None
     user_name = None
     image = None

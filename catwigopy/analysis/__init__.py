@@ -32,9 +32,18 @@ num_to_cat = [(0, 'Music and Radio'),
                   (None, 'None')]
 
 
-# Performs analysis using the provided nmf and tfidf model over the specified new doc.
-# Returns a list containing the non-0 topics and their score.
 def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
+
+    """
+    This function performs user's tweets analysis.
+
+    :param nmf: nmf model trained.
+    :param tfidf: tfidf dictionary.
+    :param tfidf_vectorizer: tfidf model trained.
+    :param doc: string containing all the user's tweets joined.
+    :return: dictionary of shape {category_name: score}
+    """
+
     # Transform vectorized tweet to NMF space
     nmf_new_doc = nmf.transform(tfidf_vectorizer.transform([doc]))
     compo = nmf_new_doc.argsort()[0, :: -1]
@@ -62,6 +71,15 @@ def apply_nmf(nmf, tfidf, tfidf_vectorizer, doc):
 #     'count': 2
 # }, ...]
 def generate_occurences_dictionay(list):
+
+    """
+    This function counts the occurrences of each term in a list.
+
+    :param list: list of hashtags / tweets
+
+    :return: list of shape [{text: term, count: occurrences}]
+    """
+
     dictionary = corpora.Dictionary(list)
 
     terms_with_score = []
@@ -76,6 +94,17 @@ def generate_occurences_dictionay(list):
 
 
 def generate_top_terms_dictionary(nmf, tfidf_vectorizer, nterms=30):
+
+    """
+    This function extract the top terms of each topic in the nmf trained model.
+
+    :param nmf: nmf model trained
+    :param tfidf_vectorizer: tfidf model trained
+    :param nterms: Number of top terms to retrieve.
+
+    :return: dictionary of shape {category_name: [{text: term_name, values: term_score}]}
+    """
+
     all_topics_dict = dict()
     fnames = tfidf_vectorizer.get_feature_names()
 
