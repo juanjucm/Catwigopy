@@ -5,7 +5,7 @@
 
 ## Introduction
 
-**Catwigopy** is a tool which provides an easy way to generate a preferences profile of a given Twitter user.
+**Catwigopy** is a tool which use the power of Natural Language Processing to provide an easy way to generate a preferences profile for a given Twitter user.
 
 Here are all the possible categories to classify a user:
 - Music and Radio
