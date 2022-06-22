@@ -19,7 +19,7 @@ setup(
     author_email='juanjucm17@gmail.com',
     install_requires=['tweepy==3.7.0',
                       'pandas==0.24.2',
-                      'numpy==1.16.2'],
+                      'numpy==1.22.0'],
     keywords='profile, twitter, natural language processing, NLP, preferences,api',
     classifiers=[
         "Programming Language :: Python :: 3.6",
